@@ -104,15 +104,15 @@ export async function callGeneratePRD(svgContent, userPrompt) {
 
 // call the API to generate ideas
 export async function generateIdeas(previousCode) {
-  //第一次code 生成完成后，开始生成idea
+  //after the first code generated
   if (iterationCounter == 1) {
     animateProgress(12.5, 25, 2000, "Loading..."); // 2 seconds animation
   }
-  //第二次code 生成完成后
+  
   if (iterationCounter == 2) {
     animateProgress(50, 65, 2000, "Loading..."); // 2 seconds animation
   }
-  //第三次code生成完成后
+
   if (iterationCounter == 3) {
     animateProgress(75, 85, 2000, "Loading..."); // 2 seconds animation
   }
@@ -286,7 +286,7 @@ export async function callAPIOnce(_storedPRD, userPrompt = null) {
       //make the button click again to call the API
       callApiButton.click();
 
-      // 前一次生成 code 结束之后, 直接自动选中当前的panel
+      // Switch to the specific panel 
       simulateClickOnPanel(iterationCounter);
 
       if (iterationFrame) {
