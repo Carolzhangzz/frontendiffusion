@@ -25,13 +25,7 @@ The emergence of Generative AI is catalyzing a paradigm shift in user interfaces
 4. View the generated UI in the preview pane on the right.
 5. Access and copy the HTML code by toggling to the "Code Panel" and using the "Copy" button.
 
-# Deploy locally:
-
-```
-git clone https://github.com/Carolzhangzz/FD
-```
-
-## IDE Requirements:
+# Requirements
 
 - Install Visual Studio Code or another editor.
 - Install Node.js (through Homebrew or download from [http://nodejs.org/](http://nodejs.org/)). If you want to install through Homebrew, you need to download Homebrew first.
@@ -40,7 +34,7 @@ git clone https://github.com/Carolzhangzz/FD
 Open the terminal on your computer or use the terminal provided by your integrated development environment (e.g., Visual Studio Code). 
 Ensure that the terminal is opened in the project folder directory.
 
-## API Key Requirements:
+## API Key Requirements
 
 \# Local Deployment Instructions 
 
