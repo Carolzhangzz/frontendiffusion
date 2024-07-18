@@ -110,5 +110,5 @@ If you use this project in your research, please cite our paper:
 
 ## Related Paper
 
-Z. Ding. 2024 [Towards Intent-based User Interfaces: Charting the Design Space of Intent-AI Interactions Across Task Types](https://arxiv.org/pdf/2404.18196)
+Ding, Zijian. ["Towards Intent-based User Interfaces: Charting the Design Space of Intent-AI Interactions Across Task Types"](https://arxiv.org/pdf/2404.18196), arXiv preprint arXiv:2404.18196 (2024).
 
