@@ -72,7 +72,7 @@ Before running the program, follow these steps:
 
  `npm install` 
 
-2. If you encounter errors like "Cannot find module '@xxxxx'", install the specific module:
+2. If you encounter errors like "Cannot find module '@module_name'", install the specific module:
 
 For example :  
 
