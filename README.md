@@ -1,5 +1,4 @@
 ![alt text](./Images/Interface.png)
-
 # Frontend Diffusion: Exploring Intent-Based User Interfaces through Sketching to Coding Task Transition (Under Review for UIST'24 Demo)
 
 <p align="center">
