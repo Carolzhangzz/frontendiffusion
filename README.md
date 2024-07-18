@@ -107,3 +107,8 @@ If you use this project in your research, please cite our paper:
 @article{
 }
 ```
+
+## Related Paper
+
+Z. Ding. 2024 [Towards Intent-based User Interfaces: Charting the Design Space of Intent-AI Interactions Across Task Types](https://arxiv.org/pdf/2404.18196)
+
