@@ -44,13 +44,11 @@ Ensure that the terminal is opened in the project folder directory.
 1. Navigate to the `.env` file in your project directory. 
 2. Insert your API key information using the following format:
 
-For example, if your API key is "abcdefghijklmnopqrst", your `.env` file should look like this:
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 
-OPENAI_API_KEY=abcdefghijklmnopqrst 
+PEXELS_API_KEY=YOUR_PEXELS_API_KEY
 
-PEXELS_API_KEY=abcdefghijklmnopqrst 
-
-ANTHROPIC_API_KEY=abcdefghijklmnopqrst
+ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
 3. Save the `.env` file after adding your API keys.
 
