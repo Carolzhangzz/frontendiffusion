@@ -6,6 +6,7 @@
   <a href="https://github.com/Carolzhangzz/FD/fork"><img src="https://img.shields.io/github/forks/Carolzhangzz/FD" alt="GitHub Forks"></a>
 </p>
 
+
 <p align="center">
    <img src="https://img.icons8.com/?size=100&id=114331&format=png&color=000000" alt="Video" width="18" height="18" style="vertical-align: middle;"/> <a href="">Video</a> •  
     <img src="https://img.icons8.com/color/48/000000/internet.png" alt="Platform" width="15" height="15" style="vertical-align: middle;"/> <a href="">Platform</a> • 
@@ -13,9 +14,11 @@
     <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="Twitter" width="18" height="18" style="vertical-align: middle;"/> <a href="">Twitter</a> 
 </p>
 
-The emergence of Generative AI is catalyzing a paradigm shift in user interfaces from command-based to intent-based outcome specification. In this paper, we explore abstract-to-detailed task transitions in the context of frontend code generation as a step towards intent-based user interfaces, aiming to bridge the gap between abstract user intentions and concrete implementations. We introduce Frontend Diffusion, an end-to-end LLM-powered tool that generates high-quality websites from user sketches. The system employs a three-stage task transition process: sketching, writing, and coding. We demonstrate the potential of task transitions to reduce human intervention and communication costs in complex tasks. Our work also opens avenues for exploring similar approaches in other domains, potentially extending to more complex, interdependent tasks such as video production.
+![alt text](Interface.png)
+Frontend Diffusion, an end-to-end LLM-powered tool that generates high-quality websites from user sketches.  Users can input a rough sketch on the canvas (left), which the system then transforms into a high-quality website page (right).
 
-![img](https://lh7-us.googleusercontent.com/docsz/AD_4nXd4sH4w7UUrdGGgGNW3k4cLcWrxbCGdAXCJ4jQbDeiVbmNYw59S9tg29_4oLo-BV8nVS66z9EiW0soY0A58OKHMnc0eV-9Ijoy-igyp-gpC_dndHqkKjSAnU3Gco-EKq-gVdwnhZtE5r5qiR5abTzGDbGeZ?key=4pmtn6sM3X3nRlxGGdJg9g)
+![alt text](Examples2.png)
+The generated websites, as illustrated above, exhibit generally satisfactory visual appearances. These include contextually  appropriate textual content, imagery, color schemes, layouts, and functionalities. 
 
 # How to Use 
 
@@ -36,7 +39,7 @@ Ensure that the terminal is opened in the project folder directory.
 
 ## API Key Requirements
 
-\# Local Deployment Instructions 
+#### Local Deployment Instructions
 
 1. Navigate to the `.env` file in your project directory. 
 2. Insert your API key information using the following format:
@@ -75,9 +78,10 @@ Before running the program, follow these steps:
 
 For example :  
 
-`npm install @anthropic-ai/sdk`
-
-`npm install dotenv`
+```
+npm install @anthropic-ai/sdk
+npm install dotenv
+```
 
 (Add any other specific modules as needed)
 
@@ -105,14 +109,3 @@ If you use this project in your research, please cite our paper:
 @article{
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
