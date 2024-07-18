@@ -15,11 +15,10 @@
 </p>
 
 ![alt text](./Images/Interface.png)
+Frontend Diffusion is an end-to-end LLM-powered tool that generates high-quality websites from user sketches. Users can input a rough sketch on the canvas, which the system then transforms into a high-quality website page. You could use it to generate websites from sketch.
 
-Frontend Diffusion is an end-to-end LLM-powered tool that generates high-quality websites from user sketches. Users can input a rough sketch on the canvas, which the system then transforms into a high-quality website page. You could use it to generate websites from sketch, as below:
-
+The generated websites, as illustrated below, exhibit generally satisfactory visual appearances. These include contextually appropriate textual content, imagery, color schemes, layouts, and functionalities.
 ![alt text](./Images/Examples2.png)
-The generated websites, as illustrated above, exhibit generally satisfactory visual appearances. These include contextually appropriate textual content, imagery, color schemes, layouts, and functionalities.
 
 # How to Use 
 
