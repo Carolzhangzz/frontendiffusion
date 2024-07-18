@@ -14,10 +14,10 @@
     <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="Twitter" width="18" height="18" style="vertical-align: middle;"/> <a href="">Twitter</a> 
 </p>
 
-![alt text](Interface.png)
+![alt text](./Images/Interface.png)
 Frontend Diffusion, an end-to-end LLM-powered tool that generates high-quality websites from user sketches.  Users can input a rough sketch on the canvas (left), which the system then transforms into a high-quality website page (right).
 
-![alt text](Examples2.png)
+![alt text](./Images/Examples2.png)
 The generated websites, as illustrated above, exhibit generally satisfactory visual appearances. These include contextually  appropriate textual content, imagery, color schemes, layouts, and functionalities. 
 
 # How to Use 
