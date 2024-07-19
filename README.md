@@ -43,8 +43,6 @@ Ensure that the terminal is opened in the project folder directory.
 1. Navigate to the `.env` file in your project directory. 
 2. Insert your API key information using the following format:
 
-OPENAI_API_KEY=YOUR_OPENAI_API_KEY
-
 PEXELS_API_KEY=YOUR_PEXELS_API_KEY
 
 ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
@@ -55,7 +53,7 @@ ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
 **For reference:**
 
-Get OpenAI API from : [openai.com](https://platform.openai.com/api-keys)
+<!-- Get OpenAI API from : [openai.com](https://platform.openai.com/api-keys) -->
 
 Get ANTHROPIC API from : [anthropic.com](https://console.anthropic.com/settings/keys)
 
