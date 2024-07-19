@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Diffusion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Frontend Diffusion</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="particles"></div>
+            <div class="container hero-content">
+                <h1>Transform Sketches into Stunning Websites</h1>
+                <p>AI-Powered Frontend Generation Tool</p>
+                <a href="https://github.com/Carolzhangzz/frontendiffusion" class="btn">Try It Now</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature-carousel">
+                    <div class="feature-item">
+                        <i class="fas fa-brain feature-icon"></i>
+                        <h3>AI-Powered Conversion</h3>
+                        <p>Transform your sketches into fully functional websites using advanced AI technology.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-desktop feature-icon"></i>
+                        <h3>User-Friendly Interface</h3>
+                        <p>Intuitive design tools that make website creation accessible to everyone.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-code-branch feature-icon"></i>
+                        <h3>Open Source</h3>
+                        <p>Collaborate and contribute to our growing community of developers and designers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <h3>Draw Your Sketch & Provide a brief website description</h3>
+                        <img src="./images/sketch.png" alt="Sketching" width="200">
+                    </div>
+                    <div class="timeline-item right">
+                        <h3>Click "Generate" to process your input & Get Your Website</h3>
+                        <img src="./images/GenerateWebsite.png" alt="AI Processing" width="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="showcase">
+            <div class="container">
+                <h2>Showcase</h2>
+                <div class="showcase-grid">
+                    <div class="showcase-item">
+                        <img src="./images/Examples.png" alt="Sketch Example 1">
+                    </div>
+                </div>
+                <a href="#" class="btn">View More</a>
+            </div>
+        </section>
+
+        <section id="cta" class="cta">
+            <div class="container">
+                <h2>Ready to Create Your Website?</h2>
+                <div class="video-container">
+                    <video id="demoVideo" controls>
+                        <source src="./video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <a href="https://github.com/Carolzhangzz/frontendiffusion" class="btn" id="generateWebsite">Try It Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <!-- <ul class="footer-links">
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul> -->
+            <div class="social-icons">
+                <a href="https://twitter.com/jasonzding/status/1814046922874724767"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7219812924582764544/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Carolzhangzz/frontendiffusion"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 (Under Review for UIST'24 Demo). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
