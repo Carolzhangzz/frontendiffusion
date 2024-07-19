@@ -25,7 +25,7 @@ const generatePRD = async (req, res) => {
       targets creating a modern and user-friendly front-end interface based on the following user's sketch (the picture I sent you) and prompt.
       User's prompt: ${userPrompt}
       In the PRD, specify what images are needed and where they should be placed (e.g., hero image, product image, etc.) using the format:
-      [term(size)], please concrete keywords like [(bread)medium] instead of something vague like [product1(small)]. 
+      [term(size)], please concrete keywords like [(bread)medium] instead of something vague like [product1(small)].
       There are 3 keywords for the size (small, medium, large, landscape, or portrait). Remember this only applies to images, if it's icons you can
       just define it without the expected format.
       Example: [school(large)]`;
@@ -60,13 +60,27 @@ const generatePRD = async (req, res) => {
 
     const imageUrls = await Promise.all(
       keywords.map(async (keyword) => {
-        const imageUrl = await fetchImageFromAPI(keyword.term, keyword.size);
-        return { term: keyword.term, size: keyword.size, imageUrl };
+        try {
+          const imageUrl = await fetchImageFromAPI(keyword.term, keyword.size);
+          return { term: keyword.term, size: keyword.size, imageUrl, error: null };
+        } catch (error) {
+          console.error(`Error fetching image for ${keyword.term}:`, error);
+          return { term: keyword.term, size: keyword.size, imageUrl: null, error: error.message };
+        }
       })
     );
 
     setStoredImageUrls(imageUrls);
-    res.json({ prd, keywords, imageUrls, storedImageUrl: imageUrl });
+    
+    const hasErrors = imageUrls.some(img => img.error !== null);
+
+    res.json({ 
+      prd, 
+      keywords, 
+      imageUrls, 
+      storedImageUrl: imageUrl,
+      hasErrors: hasErrors
+    });
   } catch (error) {
     console.error("Error in generatePRD:", error);
     res

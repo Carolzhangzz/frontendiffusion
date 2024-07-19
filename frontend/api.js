@@ -5,7 +5,7 @@ let iterationCodes = ["", "", "", ""]; // store the code for each iteration
 let _storedPRD = null;
 
 export function setStoredGeneratedCode(code) {
-  storedGeneratedCode = code;
+  storedGeneratedCode = code; 
 }
 
 export function getStoredGeneratedCode() {
@@ -65,11 +65,12 @@ const buttonIcon = callApiButton.querySelector("img");
 const outputIframe = document.getElementById("output-iframe");
 export async function callGeneratePRD(svgContent, userPrompt) {
   updateProgress("Loading...", 0);
-  callApiButton.style.width = "11rem"; 
+  callApiButton.style.width = "11rem";
   callApiButton.style.backgroundColor = "white";
-  buttonIcon.src = "/ICONS/load.gif"; 
+  buttonIcon.src = "/ICONS/load.gif";
   buttonText.textContent = "Generating Prd...";
   buttonText.style.color = "black";
+
   try {
     console.log("Attempting to call generate-prd API...");
     const response = await fetch("http://localhost:3000/api/generate-prd", {
@@ -88,9 +89,21 @@ export async function callGeneratePRD(svgContent, userPrompt) {
     if (response.ok) {
       animateProgress(0, 12.5, 2000, "Loading..."); // 2 seconds animation
       const result = await response.json();
-      // console.log("API call successful, result:", result);
       setStoredPRD(result.prd);
       output.textContent = result.prd;
+   
+      // deal with the imageUrls but not alert the error
+      if (result.imageUrls) {
+        result.imageUrls.forEach(img => {
+          if (img.error) {
+            console.warn(`Failed to fetch image for ${img.term}: ${img.error}`);
+            // can set a default image URL here 
+          } else {
+            console.log(`Image URL for ${img.term}: ${img.imageUrl}`);
+            // can use the image URL here
+          }
+        });
+      }   
     } else {
       console.error("API call failed, status:", response.status);
       const errorText = await response.text();
@@ -99,6 +112,12 @@ export async function callGeneratePRD(svgContent, userPrompt) {
   } catch (error) {
     console.error("Error in fetch operation:", error);
     console.error("Error stack:", error.stack);
+  } finally {
+    callApiButton.style.width = "8rem";
+    callApiButton.style.backgroundColor = "#3c6ce4";
+    buttonIcon.src = "/ICONS/call-api.svg";
+    buttonText.textContent = "Generate";
+    buttonText.style.color = "white";
   }
 }
 
@@ -164,6 +183,10 @@ export async function generateIdeas(previousCode) {
 
 // Call the Anthropic API once to generate code
 export async function callAPIOnce(_storedPRD, userPrompt = null) {
+  // if (!apiCallsEnabled) {
+  //   console.log("API calls are disabled due to previous errors.");
+  //   return;
+  // }
   console.log("callAPIOnce called with storedPRD:", _storedPRD); 
 
   // show the lazy load overlay 
@@ -204,7 +227,7 @@ export async function callAPIOnce(_storedPRD, userPrompt = null) {
       // Remove any non-HTML content after </html>
       cleanCode = cleanCode.replace(/(<\/html>)[\s\S]*$/, "$1");
 
-      // 检查是否生成了代码
+      // check if the code is generated successfully 
       if (cleanCode.trim()) {
         if (iterationCounter === 0) {
           updateIterationLoading(iterationCounter + 1, 100, true);
