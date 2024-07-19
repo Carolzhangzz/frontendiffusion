@@ -113,25 +113,28 @@ nav {
     width: 100%;
     height: 100%;
 }
-
-.features {
-    padding: 80px 0;
-    background-color: #fff;
+.feature-carousel-wrapper {
+    overflow: hidden;
+    position: relative;
 }
 
 .feature-carousel {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    transition: transform 0.5s ease;
 }
 
 .feature-item {
     flex: 0 0 100%;
-    scroll-snap-align: start;
     padding: 20px;
     text-align: center;
+    opacity: 0.7;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.feature-item.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .feature-icon {
