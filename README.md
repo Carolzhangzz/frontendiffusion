@@ -29,7 +29,6 @@ The generated websites, as illustrated below, exhibit generally satisfactory vis
 4. View the generated UI in the preview pane on the right.
 5. Access and copy the HTML code by toggling to the "Code Panel" and using the "Copy" button.
 # Requirements
-* Install Visual Studio Code or another editor.
 * Install Node.js (through Homebrew or download from [http://nodejs.org/](http://nodejs.org/)). If you want to install through Homebrew, you need to download Homebrew first.
 * Install npm (through [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm)).
 
