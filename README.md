@@ -40,7 +40,7 @@ Ensure that the terminal is opened in the project folder directory.
 #### Local Deployment Instructions
 
 1. Navigate to the `.env` file in your project directory. 
-2. Insert your API key information using the following format:
+2. Insert your API key information using the following format (you could get ANTHROPIC API Key from : [anthropic.com](https://console.anthropic.com/settings/keys)):
 
 ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
@@ -48,11 +48,7 @@ ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
 **Note:** Keep your API keys confidential and never share them publicly.
 
-**For reference:**
-
 <!-- Get OpenAI API from : [openai.com](https://platform.openai.com/api-keys) -->
-
-Get ANTHROPIC API from : [anthropic.com](https://console.anthropic.com/settings/keys)
 
 <!--Get PEXELS API from : [pexels.com](https://help.pexels.com/hc/en-us/articles/900004904026-How-do-I-get-an-API-key)-->
 
