@@ -42,8 +42,6 @@ Ensure that the terminal is opened in the project folder directory.
 1. Navigate to the `.env` file in your project directory. 
 2. Insert your API key information using the following format:
 
-PEXELS_API_KEY=YOUR_PEXELS_API_KEY
-
 ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
 3. Save the `.env` file after adding your API keys.
@@ -56,7 +54,7 @@ ANTHROPIC_API_KEY=YOUR_ANTHROPIC_API_KEY
 
 Get ANTHROPIC API from : [anthropic.com](https://console.anthropic.com/settings/keys)
 
-Get PEXELS API from : [pexels.com](https://help.pexels.com/hc/en-us/articles/900004904026-How-do-I-get-an-API-key)
+<!--Get PEXELS API from : [pexels.com](https://help.pexels.com/hc/en-us/articles/900004904026-How-do-I-get-an-API-key)-->
 
 ## Module Requirements
 
