@@ -20,7 +20,8 @@ Frontend Diffusion is an end-to-end LLM-powered tool that generates high-quality
 
 The generated websites, as illustrated below, exhibit generally satisfactory visual appearances. These include contextually appropriate textual content, imagery, color schemes, layouts, and functionalities.
 
-![Demo GIF](./Images/demogif.gif)
+![Demo GIF](./Images/demogif.gif) 
+![Demo GIF](./Images/demogif2.gif)
 
 ![alt text](./Images/Examples2.png)
 
