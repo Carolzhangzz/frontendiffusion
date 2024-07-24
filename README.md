@@ -23,6 +23,7 @@ The generated websites, as illustrated below, exhibit generally satisfactory vis
 <img src="./Images/newgif1.gif" width="400" /> <img src="./Images/newgif2.gif" width="400" />
 
 Screenshots of generated websites spanning commercial and academic domains:
+
 ![alt text](./Images/Examples2.png)
 
 # How to Use 
