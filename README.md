@@ -14,6 +14,8 @@
   <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="Twitter" width="18" height="18" style="vertical-align: middle;"/> <a href="https://twitter.com/Carol_Zhang1027">Twitter/X</a> 
 </p>
 
+![Demo GIF](./Images/demogif.gif)
+
 ![alt text](./Images/Interface.png)
 
 Frontend Diffusion is an end-to-end LLM-powered tool that generates high-quality websites from user sketches. Users can input a rough sketch on the canvas, which the system then transforms into a high-quality website page. You could use it to generate websites from sketch.
