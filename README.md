@@ -26,7 +26,7 @@ Screenshots of generated websites spanning commercial and academic domains:
 
 ![alt text](./Images/Examples2.png)
 
-This tool is used by other open source projects such as <a href="https://github.com/lwaekfjlk/gpu-bartender">gpu-bartender</a>.
+This tool is used by other open source projects such as <a href="https://github.com/lwaekfjlk/gpu-bartender">GPU Bartender</a>.
 
 # How to Use 
 1. Draw your sketch in the canvas panel using the toolbar on the left.
