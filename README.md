@@ -26,6 +26,8 @@ Screenshots of generated websites spanning commercial and academic domains:
 
 ![alt text](./Images/Examples2.png)
 
+This tool is used by <a href="[https://carolzhangzz.github.io/frontendiffusion/](https://github.com/lwaekfjlk/gpu-bartender)">gpu-bartender</a>
+
 # How to Use 
 1. Draw your sketch in the canvas panel using the toolbar on the left.
 2. Provide a brief website description in the input area at the top right corner.
