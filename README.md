@@ -1,7 +1,5 @@
 # Frontend Diffusion: Exploring Intent-Based User Interfaces through Sketching to Coding Task Transition
 
-(Under Review for UIST'24 Demo)
-
 <p align="center">
   <a href="https://github.com/Carolzhangzz/frontendiffusion/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   <a href="https://github.com/Carolzhangzz/FD/stargazers"><img src="https://img.shields.io/github/stars/Carolzhangzz/frontendiffusion" alt="GitHub Stars"></a>
