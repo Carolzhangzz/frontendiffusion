@@ -24,6 +24,7 @@ The generated websites, as illustrated below, exhibit generally satisfactory vis
 Screenshots of generated websites spanning commercial and academic domains:
 
 ![alt text](./Images/Examples2.png)
+![alt text](./Images/frontend_generation.png)
 
 This tool is used by other open source projects such as <a href="https://github.com/lwaekfjlk/gpu-bartender">GPU Bartender</a>.
 
