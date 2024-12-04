@@ -21,7 +21,7 @@ const generatePRD = async (req, res) => {
     });
     
     const prompt = `
-      Please generate a Product Requirements Document (PRD) targeting the creation of a modern and user-friendly personal website for HCI researchers based on the following user's sketch (the picture I sent you) and prompt.
+      Please generate a Product Requirements Document (PRD) targeting the creation of a modern and user-friendly personal website for Junior Researchers based on the following user's sketch (the picture I sent you) and prompt.
       User's prompt: ${userPrompt}
       In the PRD, specify what images are needed and where they should be placed (e.g., hero image, profile image, etc.) using the format:
       [term(size)], please use concrete keywords like [(profile-picture)medium] instead of vague descriptions like [image1(small)].
