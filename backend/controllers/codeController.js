@@ -29,28 +29,39 @@ const generateCode = async (req, res) => {
       `Use the image for "${term}" at the following URL: ${imageUrl}. Size: ${size}.`).join('\n');
 
     const prompt = `
-      You are a design engineer tasked with creating the user interface and user experience based on a user's wireframe sketch. Prioritize the user's considerations as design preferences while ensuring the design adheres to these principles:
-      1. Apply shadows judiciously—enough to create depth but not overly done.
-      2. Use the Gestalt principles (proximity, similarity, continuity, closure, and connectedness) to enhance visual perception and organization.
-      3. Ensure accessibility, particularly in color choices; use contrasting colors for text, such as white text on suitable background colors, to ensure readability. Feel free to use gradients if they enhance the design's aesthetics and functionality.
-      4. Maintain consistency across the design.
-      5. Establish a clear hierarchy to guide the user's eye through the interface.
-      Additional considerations:
-      2. Utilize a CSS icon library Font Awesome in your <head> tag to include vector glyph icons.
-      3. Ensure all elements that can be rounded, such as buttons and containers, have consistent rounded corners to maintain a cohesive and modern visual style.
-      Based on the following Product Requirements Document (PRD) and User Prompt.
-      Product Requirements Document (PRD): ${storedPRD}
-      User's prompt: ${userPrompt}
-      Please incorporate the following images as specified:
-      ${imageInsertionInstructions}
-      Please provide your output in HTML, CSS, and JavaScript without any explanations and natural languages(only code),with an emphasis on JavaScript for dynamic user interactions such as clicks and hovers.`;
-
+    You are a design engineer tasked with creating the personal website for a junior researcher based on a user's wireframe sketch.
+    Prioritize the user's considerations as design preferences while ensuring the design adheres to these principles:
+    1. Apply shadows judiciously—enough to create depth but not overly done.
+    2. Use the Gestalt principles (proximity, similarity, continuity, closure, and connectedness) to enhance visual perception and organization.
+    3. Ensure accessibility, particularly in color choices; use contrasting colors for text, such as white text on suitable background colors, to ensure readability. Feel free to use gradients if they enhance the design's aesthetics and functionality.
+    4. Maintain consistency across the design.
+    5. Establish a clear hierarchy to guide the user's eye through the interface.
+  
+    Additional considerations:
+    1. Utilize a CSS icon library Font Awesome in your <head> tag to include vector glyph icons.
+    2. Ensure all elements that can be rounded, such as buttons and containers, have consistent rounded corners to maintain a cohesive and modern visual style.
+  
+    Based on the following Product Requirements Document (PRD) and User Prompt:
+    Product Requirements Document (PRD): ${storedPRD}
+    User's prompt: ${userPrompt}
+  
+    **Image insertion instructions**:
+    - Each image should complement the content it is near. For example:
+      - If a section introduces the researcher, use an appropriate profile image.
+      - For projects or portfolio sections, associate images with the described projects.
+      - Use decorative images (e.g., patterns, icons) sparingly and only to enhance the visual appeal of whitespace or dividers.
+    - Avoid placing images in isolated areas without supporting content.
+    - Ensure the layout looks balanced, and no section appears cluttered or empty due to image placement.
+  
+    Please provide your output in HTML, CSS, and JavaScript without any explanations and natural languages (only code), with an emphasis on JavaScript for dynamic user interactions such as clicks and hovers.
+  `;
+  
     const anthropic = new Anthropic({
       apiKey: process.env.ANTHROPIC_API_KEY,
     });
 
     const message = await anthropic.messages.create({
-      model: "claude-3-5-sonnet-20240620",
+      model: "claude-3-5-sonnet-20241022",
       max_tokens: 4096,
       messages: [
         {

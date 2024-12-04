@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Social Good Research</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c5530;
+            --accent-color: #88b04b;
+            --text-color: #333;
+            --h1-size: clamp(2rem, 5vw, 3.5rem);
+            --h2-size: clamp(1.5rem, 3vw, 2.5rem);
+            --body-size: clamp(1rem, 1.5vw, 1.125rem);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: var(--body-size);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('ai-pattern.svg') repeat;
+            opacity: 0.1;
+            animation: floatBackground 20s linear infinite;
+        }
+
+        .hero-content {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: var(--h1-size);
+            margin-bottom: 1.5rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding: 5rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            padding: 3rem 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            background: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-links a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-color);
+            top: 100%;
+            left: 0;
+            transition: top 0.3s;
+        }
+
+        .social-links a:hover::before {
+            top: 0;
+        }
+
+        .social-links a:hover i {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes floatBackground {
+            from { transform: translate(0, 0); }
+            to { transform: translate(-50%, -50%); }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">AI Research</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>AI for Social Good: Advancing Sustainability Through Research</h1>
+            <p>Exploring innovative solutions for a sustainable future through artificial intelligence</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="main-content">
+            <div class="card">
+                <h2>About Me</h2>
+                <p>Research focused on applying AI to sustainability challenges</p>
+            </div>
+            <div class="card">
+                <h2>Featured Research</h2>
+                <p>Latest developments in AI for environmental solutions</p>
+            </div>
+        </div>
+
+        <div class="research-grid">
+            <div class="card">
+                <i class="fas fa-leaf"></i>
+                <h3>Sustainability AI</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>Machine Learning</h3>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const nav = document.querySelector('nav');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.style.background = 'rgba(44,85,48,0.95)';
+                } else {
+                    nav.style.background = 'var(--primary-color)';
+                }
+            });
+
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.6s ease-out';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

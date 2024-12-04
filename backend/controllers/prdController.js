@@ -19,16 +19,25 @@ const generatePRD = async (req, res) => {
     const anthropic = new Anthropic({
       apiKey: process.env.ANTHROPIC_API_KEY,
     });
-
+    
     const prompt = `
-      Please generate a Product Requirements Document (PRD) which 
-      targets creating a modern and user-friendly front-end interface based on the following user's sketch (the picture I sent you) and prompt.
+      Please generate a Product Requirements Document (PRD) targeting the creation of a modern and user-friendly personal website for HCI researchers based on the following user's sketch (the picture I sent you) and prompt.
       User's prompt: ${userPrompt}
-      In the PRD, specify what images are needed and where they should be placed (e.g., hero image, product image, etc.) using the format:
-      [term(size)], please concrete keywords like [(bread)medium] instead of something vague like [product1(small)].
-      There are 3 keywords for the size (small, medium, large, landscape, or portrait). Remember this only applies to images, if it's icons you can
-      just define it without the expected format.
-      Example: [school(large)]`;
+      In the PRD, specify what images are needed and where they should be placed (e.g., hero image, profile image, etc.) using the format:
+      [term(size)], please use concrete keywords like [(profile-picture)medium] instead of vague descriptions like [image1(small)].
+      There are 3 keywords for the size (small, medium, large, landscape, or portrait). Remember this only applies to images; for icons, you can just define them without the expected format.
+      Example: [portfolio-preview(landscape)]`;
+
+
+    // const prompt = `
+    //   Please generate a Product Requirements Document (PRD) which 
+    //   targets creating a modern and user-friendly front-end interface based on the following user's sketch (the picture I sent you) and prompt.
+    //   User's prompt: ${userPrompt}
+    //   In the PRD, specify what images are needed and where they should be placed (e.g., hero image, product image, etc.) using the format:
+    //   [term(size)], please concrete keywords like [(bread)medium] instead of something vague like [product1(small)].
+    //   There are 3 keywords for the size (small, medium, large, landscape, or portrait). Remember this only applies to images, if it's icons you can
+    //   just define it without the expected format.
+    //   Example: [school(large)]`;
 
     const message = await anthropic.messages.create({
       model: "claude-3-5-sonnet-20240620",
