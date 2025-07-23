@@ -1,4 +1,4 @@
-# Frontend Diffusion: Exploring Intent-Based User Interfaces through Sketching to Coding Task Transition
+# VL/HCC'25: Frontend Diffusion: Empowering Self-Representation of Junior Researchers and Designers Through Agentic Workflows
 
 <p align="center">
   <a href="https://github.com/Carolzhangzz/frontendiffusion/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.icons8.com/?size=100&id=qGwgMt9xZDy5&format=png&color=000000" alt="Paper" width="17" height="17" style="vertical-align: middle;"/> <a href="https://arxiv.org/abs/2408.00778">Paper</a> • 
+  <img src="https://img.icons8.com/?size=100&id=qGwgMt9xZDy5&format=png&color=000000" alt="Paper" width="17" height="17" style="vertical-align: middle;"/> <a href="https://arxiv.org/abs/2408.00778](https://arxiv.org/pdf/2502.03788">Paper</a> • 
    <img src="https://img.icons8.com/color/48/000000/internet.png" alt="Platform" width="15" height="15" style="vertical-align: middle;"/> <a href="https://carolzhangzz.github.io/frontendiffusion/">Website</a> • 
    <img src="https://img.icons8.com/?size=100&id=114331&format=png&color=000000" alt="Video" width="18" height="18" style="vertical-align: middle; "/> <a href="https://twitter.com/jasonzding/status/1814046922874724767">Demo Video</a> •  
   <img src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="Twitter" width="18" height="18" style="vertical-align: middle;"/> <a href="https://twitter.com/Carol_Zhang1027">Twitter/X</a> 
