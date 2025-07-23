@@ -1,4 +1,4 @@
-# VL/HCC'25: Frontend Diffusion: Empowering Self-Representation of Junior Researchers and Designers Through Agentic Workflows
+# [VL/HCC'25] Frontend Diffusion: Empowering Self-Representation of Junior Researchers and Designers Through Agentic Workflows
 
 <p align="center">
   <a href="https://github.com/Carolzhangzz/frontendiffusion/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
